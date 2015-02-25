@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="firstpage" id="view">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+		<h1>My Heading</h1>
+		<a href="#" class="ui-btn ui-icon-search ui-btn-icon-right">Search</a>
+	</div>
+	
+	<div data-role="panel" id="myPanel1"  data-display="overlay">
+		<h2>My Panel 1</h2>
+		<p>Some text in the panel 1</p>
+		<p>It will close once you click outside the panel.</p>
+		<p>This panel displayed as Overlay.</p>
+		<a href="#view"  data-rel="close" class="ui-btn ui-icon-delete ui-btn-icon-left">Close</a>
+	</div>
+	
+	
+	<div data-role="panel" data-dismissible="false" id="myPanel2"  data-display="push">
+		<h2>My Panel 2</h2>
+		<p>Some text in the panel 2</p>
+		<p>It will not close if you click outside the panel.</p>
+		<p>This panel displayed as Push.</p>
+		<a href="#view"  data-rel="close" class="ui-btn ui-icon-delete ui-btn-icon-left">Close</a>
+	</div>
+	
+	
+	<div data-role="panel" id="myPanel3" data-dismissible="false" data-position="right"  data-display="reveal">
+		<h2>My Panel 3</h2>
+		<p>Some text in the panel 3</p>
+		<p>This panel is positioned to right.</p>
+		<p>This panel displayed as reveal.</p>
+		<a href="#view"  data-rel="close" class="ui-btn ui-icon-delete ui-btn-icon-left">Close</a>
+	</div>
+
+
+	<div data-role="main" class="ui-content" >
+		<p>Click on the button below to open the Panel.</p>
+		<a href="#myPanel1" class="ui-btn ui-btn-inline">Open Panel 1</a>
+		<a href="#myPanel2" class="ui-btn ui-btn-inline">Open Panel 2</a>
+		<a href="#myPanel3" class="ui-btn ui-btn-inline">Open Panel 3</a>
+	</div>
+
+	<div data-role="footer">
+		<h1>Footer Text</h1>
+	</div>
+	
+</div>
+
+
+</div>
+
+</body>
+</html>

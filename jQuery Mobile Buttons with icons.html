@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="firstpage">
+  <div data-role="main" class="ui-content">
+    <h1>Contents for page 1</h1>
+	<div data-role="controlgroup" data-type="vertical">
+		<a href="#secondpage" class="ui-btn ui-icon-home ui-btn-icon-left" data-transition="fade">Go to Page 2 (fade)</a>
+		<a href="#secondpage" class="ui-btn ui-icon-search  ui-btn-icon-notext ui-btn-icon-right" data-transition="flip">Go to Page 2 (flip)</a>
+		<a href="#secondpage" class="ui-btn ui-icon-audio  ui-btn-icon-notext ui-btn-icon-top" data-transition="pop">Go to Page 2 (pop)</a>
+		<a href="#secondpage" class="ui-btn ui-icon-delete ui-nodisc-icon ui-btn-icon-bottom" data-transition="slide">Go to Page 2 (Slide)</a>
+		<a href="#secondpage" class="ui-btn ui-icon-alert ui-nodisc-icon ui-btn-icon-left" data-transition="slidefade">Go to Page 2 (slidefade)</a>
+		<a href="#secondpage" class="ui-btn ui-icon-lock ui-btn-icon-right" data-transition="slideup">Go to Page 2 (slideup)</a>
+		<a href="#secondpage" class="ui-btn ui-icon-grid ui-alt-icon ui-btn-icon-top" data-transition="slidedown">Go to Page 2 (slidedown)</a>
+		<a href="#secondpage" class="ui-btn ui-icon-info ui-alt-icon ui-btn-icon-bottom" data-transition="turn">Go to Page 2 (turn)</a>
+		<a href="#secondpage" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-transition="none">Go to Page 2 (none)</a>
+	</div>
+  </div>
+</div> 
+
+<div data-role="page" data-dialog="true" id="secondpage">
+<div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <h1>Contents for page 2</h1>
+	<div data-role="controlgroup" data-type="horizontal">
+		<a href="#firstpage" class="ui-btn ui-btn-inline" data-direction="reverse" data-transition="fade">Go to Page 1 (fade)</a>			<br />
+		<a href="#firstpage" class="ui-btn ui-btn-inline" data-direction="reverse" data-transition="flip">Go to Page 1 (flip)</a>			<br />
+		<a href="#firstpage" class="ui-btn ui-btn-inline" data-direction="reverse" data-transition="pop">Go to Page 1 (pop)</a>  			<br />
+		<a href="#firstpage" class="ui-btn ui-btn-inline" data-direction="reverse" data-transition="slide">Go to Page 1 (Slide)</a>			<br />
+		<a href="#firstpage" class="ui-btn ui-btn-inline" data-direction="reverse" data-transition="slidefade">Go to Page 1 (slidefade)</a> <br />
+		<a href="#firstpage" class="ui-btn ui-btn-inline" data-direction="reverse" data-transition="slideup">Go to Page 1 (slideup)</a>     <br />
+		<a href="#firstpage" class="ui-btn ui-btn-inline" data-direction="reverse" data-transition="slidedown">Go to Page 1 (slidedown)</a> <br />
+		<a href="#firstpage" class="ui-btn ui-btn-inline" data-direction="reverse" data-transition="turn">Go to Page 1 (turn)</a>           <br />
+		<a href="#firstpage" class="ui-btn ui-btn-inline" data-direction="reverse" data-transition="none">Go to Page 1 (none)</a>           <br />
+	</div>
+  </div>
+</div> 
+
+</body>
+</html>
