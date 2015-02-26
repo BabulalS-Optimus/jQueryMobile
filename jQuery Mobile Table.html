@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+table,td,tr,th {
+    border: 1px solid #d6d6d6;
+	border-collapse: collapse;
+	padding: 4px;
+}
+
+tr:nth-child(even) {
+    background: #e9e9e9;
+}
+</style>
+</head>
+<body>
+
+<div data-role="page" id="firstpage">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+		<h1>My Heading</h1>
+		<a href="#" class="ui-btn ui-icon-search ui-btn-icon-right">Search</a>
+		
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#" class="ui-icon-home ui-btn-icon-top">Home</a>        </li>
+				<li><a href="#" class="ui-icon-search ui-btn-icon-top">Search</a>    </li>
+				<li><a href="#" class="ui-icon-plus ui-btn-icon-top">Add button 1</a></li>
+				<li><a href="#" class="ui-icon-plus ui-btn-icon-top">Add button 2</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div data-role="main" class="ui-content">
+		<table data-role="table" data-mode="columntoggle" class="ui-content ui-shadow" data-column-btn-text="Click me to show/hide columns...">
+			<thead>
+				<tr>
+					<th data-priority="4">ID</th>
+					<th>Name</th>
+					<th data-priority="1">Age</th>
+					<th data-priority="2">Mobile</th>
+					<th data-priority="3">Email</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Tom Hanks</td>
+					<td>51</td>
+					<td>8678987655</td>
+					<td>tomhanks@gmail.com</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>John Doe</td>
+					<td>47</td>
+					<td>9818987655</td>
+					<td>johndoe@gmail.com</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Foo Bar</td>
+					<td>38</td>
+					<td>9910987655</td>
+					<td>foobar@gmail.com</td>
+				</tr>
+			</tbody>
+		</table>
+	
+	</div>
+	
+	<div data-role="footer" data-position="fixed" style="text-align:center;">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add button 1</a>
+			<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add button 2</a>
+			<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add button 3</a>
+			<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add button 4</a>
+		</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

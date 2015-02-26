@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+	$(function(){
+		$("#container").on("tap", function(event){
+			$("#message").text("Tapped");
+		});
+		
+		$("#container").on("taphold", function(event){
+			$("#message").text("Tap and Hold");
+		});
+		
+	});
+</script>
+</head>
+<body>
+
+<div data-role="page" id="firstpage">
+
+	<div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+		<h1>My Heading</h1>
+		<a href="#" class="ui-btn ui-icon-search ui-btn-icon-right">Search</a>
+		
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#" class="ui-icon-home ui-btn-icon-top">Home</a>        </li>
+				<li><a href="#" class="ui-icon-search ui-btn-icon-top">Search</a>    </li>
+				<li><a href="#" class="ui-icon-plus ui-btn-icon-top">Add button 1</a></li>
+				<li><a href="#" class="ui-icon-plus ui-btn-icon-top">Add button 2</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div data-role="main" class="ui-content" id="container">
+		<form>
+			<fieldset>
+				<h1 id="message"></h1>
+				<span>Click here</span>
+			</fieldset>		
+		</form>
+		
+	</div>
+	
+	<div data-role="footer" data-position="fixed" style="text-align:center;">
+		<div data-role="controlgroup" data-type="horizontal">
+			<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add button 1</a>
+			<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add button 2</a>
+			<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add button 3</a>
+			<a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Add button 4</a>
+		</div>
+	</div>
+	
+</div>
+
+</body>
+</html>
